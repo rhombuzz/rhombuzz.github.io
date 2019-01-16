@@ -5,15 +5,15 @@ tags: [vba, excel]
 comments: false
 ---
 
-Möge der folgende Einstieg den lieben Kolleginnen und Kollegen von Nutzen sein und sie nicht zu Tode langweilen.
+Möge der folgende Einstieg den lieben Kolleginnen und Kollegen von nachhaltigem Nutzen sein ...
 
 ## Intro
 
-Visual Basic (VB) ist eine objektorientierte Programmiersprache. VBA (for Applications) ist ein ableger, der zur Ablaufsteuerung bzw. Automatisierung von MS Office-Produkten verwendet wird. Die Objektorientierung bietet den Vorteil, dass zahlreiche applikationsinterne Eigenschaften (Objekte und Attribute) und Methoden (Prozeduren) angesprochen werden können. 
+Visual Basic (VB) ist eine objektorientierte Programmiersprache. VBA (for Applications) ist ein Ableger, der zur Ablaufsteuerung bzw. Automatisierung von MS Office-Produkten verwendet wird. Die Objektorientierung bietet den Vorteil, dass zahlreiche applikations- also excel-interne Eigenschaften (Objekte und Attribute) und Methoden (Prozeduren) angesprochen werden können. 
 
-Die Objektorientierung führt zu Code mit der unverkennbaren Punkt-Semantik, wie bspw. `Worksheets("Auswertung").Range("A1:D5").Value = 55`. VBA wirkt zu Beginn oft schwierig, da man optisch nicht zwischen Eigenschaften und Methoden unterscheiden kann; bzw. auch für Fortgeschrittene häufig unklar bleibt, wie bestimmte Eigenschaftzen oder Obejekte -- von denen man weiß, dass es sie geben muss -- eigentlich heißen.
+Die Objektorientierung führt zu Code mit der unverkennbaren Punkt-Semantik, wie bspw. `Worksheets("Auswertung").Range("A1:D5").Value = 55`. VBA wirkt zu Beginn oft schwierig, da man optisch nicht zwischen Eigenschaften und Methoden unterscheiden kann bzw. auch für Fortgeschrittene häufig unklar bleibt, wie bestimmte Eigenschaften oder Objekte -- von denen man weiß, dass es sie geben muss -- eigentlich heißen.
 
-Excel-Dateien mit VBA-Code (Makros) werden in Daten mit der Endung `*.xlsm` gespeichert. Die einzelnen Makros und Funktionen werden in sog. Modulen abgelegt; vergleichbar mit Arbeitsblättern nur eben für VBA. Prozeduren sind eigenständige "Programme" bzw. Makros und werden mit dem Schlüsselwort `Sub` definiert. Funktionen sind eigenständige Zellfunktionen vergleichbar mit excel-internen wie `Summe, Mittelwert usw.`, die bei Eingabe von Argumenten einen Rückgabewert in die Zelle schreiben; sie werden mit dem Schlüsselwort `Function` definiert.
+Excel-Dateien mit VBA-Code werden in Daten mit der Endung `*.xlsm` gespeichert. Die einzelnen Makros und Funktionen werden in sog. Modulen abgelegt; diese sind vergleichbar mit Arbeitsblättern nur eben für VBA-Code. Prozeduren sind eigenständige "Programme" bzw. Makros und werden mit dem Schlüsselwort `Sub` definiert. Funktionen sind eigenständige Zellfunktionen vergleichbar mit excel-internen wie `Summe` oder `Mittelwert`, die bei Eingabe von Argumenten einen Rückgabewert in die Zelle schreiben; sie werden mit dem Schlüsselwort `Function` definiert.
 
 Es gibt arithmetische Operatoren: `+ - * / ^`, Vergleichsoperatoren `= < > <= >= <> is like` und logische Operatoren `not and or xor eqv`.
 
@@ -23,11 +23,11 @@ Weiterführendes unter <https://docs.microsoft.com/de-de/office/vba/api/overview
 
 Funktionen sind eigenständige Programme, die entweder durch ihre Verwendung in einer Zelle oder auch durch anderen VBA-Code aufgerufen werden können. Funktionen haben idR mehrere Eingabewerte und -parameter und liefern **einen** Rückgabewert. Die Eingabeparameter werden idR positional (d.h. in einer feststehenden Reihenfolge) übergeben.
 
-Im Gegensatz zu den "deutschsprachigen" Arbeitsblättern, ist VBA "englisch". D.h. das Semikolon ist hier ein Komma (bspw. `round(23, 0)`) Komma ist Punkt (bspw. bei der Zahl `2.3`) In VBA integrierte Excel-Functionen müssen mit ihrer engl. Bezeichnung angegeben werden.
+Im Gegensatz zu den "deutschsprachigen" Arbeitsblättern, ist VBA "englisch". D.h. das Semikolon ist hier ein Komma (bspw. `round(23, 0)`), das Komma ist ein Punkt (bspw. bei der Zahl `2.3`) In VBA integrierte Excel-Functionen müssen mit ihrer englischen Bezeichnung angegeben werden.
 
-### einige Beispiele
+### erste Schritte
 
-Eine Funktion wird mit ihrem Namen (hier `sum`) definiert, in der folgenden Klammer werden die Variablennamen der Eingabeparameter (hier `a` und `b`) spezifiziert. Der letztliche Rückgabewert wird im weiteren Ablauf dem Funktionsnamen zugewiesen.
+Eine Funktion wird mit ihrem Namen (hier `sum`) definiert, in der folgenden Klammer werden die Variablennamen der Eingabeparameter (hier `a` und `b`) spezifiziert. Der Rückgabewert wird im weiteren Ablauf dem Funktionsnamen zugewiesen.
 
 ```visualbasic
 Function sum(a, b)
@@ -35,7 +35,7 @@ Function sum(a, b)
 End Function
 ```
 
-Variablen (für Zwischenergebnisse o.ä.) lassen sich innerhalb der Funktion in beliebiger Anzahl generieren, indem man ihrem Namen einfach einen Wert zuweist. Man kann Variablen auch mit dem Schlüsselwort `Dim` erstellen.
+Variablen (für Zwischenergebnisse o.ä.) lassen sich innerhalb der Funktion in beliebiger Anzahl generieren, indem man ihrem Namen einfach einen Wert zuweist. Man kann leere Variablen auch mit dem Schlüsselwort `Dim` erstellen.
 
 ```visualbasic
 Function mult(a, b)
@@ -67,7 +67,7 @@ End Function
 
 ## Kontrollstrukturen
 
-Mittels `If-Then-Else` werden Fallunterscheidungen getroffen. Teile des Codes werden nur ausgeführt, wenn vorgenannte Bedingungen erfüllt sind. Der Bedingungsblock wird mit den SChlüsselwort `End If` abgeschlossen.
+Mittels `If-Then-Else` werden Fallunterscheidungen getroffen. D.h. Teile des Codes werden nur ausgeführt, wenn vorgenannte Bedingungen erfüllt sind. Der Bedingungsblock wird mit den Schlüsselwort `End If` abgeschlossen.
 
 ```visualbasic
 Function if_vgl(a)
@@ -85,7 +85,7 @@ Function if_vgl(a)
 End Function
 ```
 
-Geht es darum, bestimmte Zahlenwerte oder -bereiche zu unterscheiden, bietet sich `Select Case` an.
+Geht es darum, bestimmte Zahlenwerte oder -bereiche zu unterscheiden, bietet sich die Verwendung von `Select Case` an.
 
 ```visualbasic
 Function case_vgl(nmbr)
@@ -104,14 +104,14 @@ Function case_vgl(nmbr)
 End Function
 ```
 
-Für das gleiche Ergebnis wie in den obigen Beispielen benötigte man die Zellenformel `=WENN(C37<0;"kleiner Null";WENN(C37=1;"gleich Eins";WENN(UND(C37>=2;C37<=4);"zwischen Zwei und Vier";WENN(ODER(C37=23;C37=42;C37=666);"vorzügliche Wahl";"irgendwas anderes"))))`.[^1] 
+Für das gleiche Ergebnis wie in den obigen zwei Beispielen würde man die Zellenformel `=WENN(C37<0;"kleiner Null";WENN(C37=1;"gleich Eins";WENN(UND(C37>=2;C37<=4);"zwischen Zwei und Vier";WENN(ODER(C37=23;C37=42;C37=666);"vorzügliche Wahl";"irgendwas anderes"))))` benötigen.[^1] 
 Das ist nicht sonderlich übersichtlich.
 
 [^1]: Der Wert für `nmbr` steht im Beispiel in Zelle `C37`.
 
 ## Schleifen (loops)
 
-Mit Schleifen wird eine Gruppe von Anweisungen wiederholt. Die Schleife bricht ab, wenn entweder eine Bedingung erfüllt ist oder eine (feststehende) Anzahl vbon Durchläufen erreicht.
+Mit Schleifen werden Anweisungen wiederholt. Die Schleife bricht ab, wenn entweder eine Bedingung erfüllt ist oder eine (feststehende) Anzahl von Durchläufen erreicht.
 
 Bei der `while`-Bedingungsschleife steht die Anzahl der Durchläufe nicht vorab fest; sie stoppt erst, wenn die Abbruchbedingung erfüllt ist.[^2]
 
@@ -126,7 +126,7 @@ Function sqr_till_max(nmbr, Optional limit = 888)
 End Function
 ```
 
-Bei der `for-next`-Zählschleife ist die Anzahl der Durchläufe im weitesten Sinne determiniert, in simpelsten Fall durch einen Eingangsparameter.
+Bei der `for-next`-Zählschleife ist die Anzahl der Durchläufe im weitesten Sinne determiniert. Im simpelsten Fall durch einen Eingangsparameter.
 
 ```visualbasic
 Function mad_adder(nmbr, runs)
@@ -148,7 +148,7 @@ Function wrksht_nr()
 End Function
 ```
 
-Der Datentyp `Array` besteht aus `for-each`-iterierbaren Elementen. Das folgende Beispiel zeigt die Funktionsweise der Schleife Schritt für Schritt mit der `MsgBox`[^3] und gibt am Ende den Wert des Elementes mit dem Index Nummer 1 zurück. Da die Indizes eines `Array` in VBA [mit 0 beginnen](https://en.wikipedia.org/wiki/Zero-based_numbering), wird deshalb der zweite Wert angezeigt.
+Der Datentyp `Array` besteht aus `for-each`-iterierbaren Elementen. Das folgende Beispiel zeigt die Funktionsweise der Schleife Schritt für Schritt durch die Ausgabe in der `MsgBox`[^3] und gibt am Ende den Wert des Elementes mit dem Index Nummer 1 zurück. Da die Indizes eines `Array` in VBA [mit 0 beginnen](https://en.wikipedia.org/wiki/Zero-based_numbering), wird deshalb der zweite Wert angezeigt.
 
 [^3]: Das Verwenden einer `MsgBox` in einer Funktion ist keine gute Idee, da sie jedes mal aufgerufen wird, wenn die Zelle mit der Formel neu berechnet wird. `MsgBox` finden daher eher in Makros Anwendung.
 
@@ -156,7 +156,6 @@ Der Datentyp `Array` besteht aus `for-each`-iterierbaren Elementen. Das folgende
 Function array_loop()    
     a = Array(1, 2, 3)
     For Each i In a
-        ' step-by-step
         MsgBox (i)
     Next
     array_loop = a(1)
@@ -165,9 +164,9 @@ End Function
 
 ## Zellbereiche mit dem Range-Objekt verarbeiten
 
-Bis jetzt wurden den Funktionen nur einzelne Zellen als Eingabeparameter übergeben. Häufig will man aber mit Zellbereichen (unbekannter Größe) arbeiten. Damit das funktioniert, muss der Eingabeparameter von vornherein `As Range` definiert werden. Weiterführendes zum `Range`-Objekt gibt es [hier](https://docs.microsoft.com/de-de/office/vba/api/excel.range(object)). 
+Bis jetzt wurden den Funktionen nur einzelne Zellen als Eingabeparameter übergeben. Häufig will man aber mit Zellbereichen (vorab unbekannter Größe) arbeiten. Damit das funktioniert, muss der Eingabeparameter von vornherein `As Range` definiert werden. Weiterführendes zum `Range`-Objekt gibt es [hier](https://docs.microsoft.com/de-de/office/vba/api/excel.range(object)). 
 
-Im folgenden Beispiel werden die Eigenschaften `Columns`, `Rows` und `Cells` des `Range` angesprochen und jeweils mittels der Methode `Count` gezählt. `Columns`, `Rows` und `Cells` sind -- das suggeriert die Mehrzahl bereits -- wieder Gruppen von Spalten, Zeilemn oder Zellen.
+Im folgenden Beispiel werden die Eigenschaften `.Columns`, `.Rows` und `.Cells` des `Range` angesprochen und jeweils mittels der Methode `.Count` gezählt. `.Columns`, `.Rows` und `.Cells` sind -- das suggeriert die Mehrzahl bereits -- wieder Gruppen von Spalten, Zeilen oder Zellen.
 
 ```visualbasic
 Function xrange(rng As Range)
@@ -178,9 +177,9 @@ Function xrange(rng As Range)
 End Function
 ```
 
-Ein `Range` kann als eine Gruppe von Zellen (oder auch Spalten und Zeilen) verstanden werden. Die einzelnen Elemente können über ihren Index angesprochen werden, der in diesem Fall mit 1 beginnt (man merkt, Konsistenz ist nicht MS' Sache). 
+Ein `Range` kann als eine Gruppe von Zellen (oder Spalten oder Zeilen) verstanden werden. Die einzelnen Elemente können über ihren Index angesprochen werden, der -- im Gegensatz zum `Array` -- in diesem Fall mit 1 beginnt (man merkt, Konsistenz ist nicht so MS' Sache). 
 
-Der Rückgabewert des nächsten Beispiels entspricht der Eigenschaft `Value` der Zelle mit dem entsprechenden Index.
+Der Rückgabewert des nächsten Beispiels entspricht der Eigenschaft `.Value` der Zelle mit dem entsprechenden Index.
 
 ```visualbasic
 Function getval_frompos(rng As Range, pos)
@@ -188,7 +187,7 @@ Function getval_frompos(rng As Range, pos)
 End Function
 ```
 
-Nächste Beispiel: Die einzelnen Zellen werden in der Schleife über ihre Position / Index ausgelesen. Die Zahl der loop-Durchläufe wird über die Gesamtzahl der Zellen des eingegebenen Zellbereiches bestimmt.
+Nächstes Beispiel: Die einzelnen Zellen des Bereiches werden in der Schleife über ihre Position / ihren Index ausgelesen. Die Zahl der loop-Durchläufe wird über die Gesamtzahl der Zellen des eingegebenen Zellbereiches festgelegt.
 
 ```visualbasic
 Function pos_mean(rng As Range)    
@@ -200,7 +199,7 @@ Function pos_mean(rng As Range)
 End Function
 ```
 
-Alternativ zum Durchlaufen der einzelnen Indizes  lassen sich Zellbereiche auch mit der `for-each`-Schleife verarbeiten. Die einzelnen Zellen werden der Schleife als Teilelement des Range-Objektes übergeben. Die Zahl der loop-Durchläufe muss nicht vorab bestimmt werden, da der loop stoppt, wenn es keine Zellen mehr zu übergeben gibt.
+Alternativ zum Durchlaufen der einzelnen Indizes  lassen sich Zellbereiche auch mit der `for-each`-Schleife verarbeiten. Die einzelnen Zellen werden der Schleife als iterierbare Teilelemente des Range-Objektes übergeben. Die Zahl der loop-Durchläufe muss nicht vorab vom user bestimmt werden, da der loop stoppt, wenn es keine Zellen mehr zu übergeben gibt.
 
 ```visualbasic
 Function cell_adder(rng As Range, Optional min = 0, Optional max = 9999)
@@ -213,7 +212,7 @@ Function cell_adder(rng As Range, Optional min = 0, Optional max = 9999)
 End Function
 ```
 
-VBA ist bei der Angabe der erfragten Attribute sehr 'nachsichtig'. In der eben gezeigten Funktion müssten eigentlich die Attribute der in der Schleife verwendeten Objekte weiter spezifizert werden (nämlich `rng.Cells` und `zelle.Value`). VBA verwendetet aber ohne Angabe Standardwerte. Das erscheint -- gerade für Anfänger -- praktisch, da häufige Fehler gar nicht erst auftreten. Führt aber bei komplexeren Abläufen zu schwer nachvollziehbarem Verhalten.
+VBA ist bei der Angabe der erfragten Attribute sehr 'nachsichtig'. In der eben gezeigten Funktion müssten eigentlich die Attribute der in der Schleife verwendeten Objekte weiter spezifizert werden (nämlich `rng.Cells` und `zelle.Value`). VBA verwendetet aber ohne genaue Angaben Standardwerte. Das erscheint -- gerade für Anfänger -- praktisch, da häufige Fehler gar nicht erst auftreten. Führt aber bei komplexeren Abläufen zu schwer nachvollziehbarem Verhalten.
 
 Ein genaue Angabe des Attributes ist spätestens dann vonnöten, wenn man nicht nur über Zellen loopen möchte.
 
@@ -221,8 +220,10 @@ Ein genaue Angabe des Attributes ist spätestens dann vonnöten, wenn man nicht 
 Function col_loop(bereich As Range)
     For Each spalte In bereich.Columns
         For Each zelle In spalte.Cells
-            MsgBox ("Zelle: " & zelle.Value & vbNewLine & "SpaltenNummer: " & spalte.Column)
+            MsgBox ("Zelle: " & zelle.Value & vbNewLine & "Spalte: " & spalte.Column)
         Next zelle
     Next spalte
 End Function
 ```
+
+----
