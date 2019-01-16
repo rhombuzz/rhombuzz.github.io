@@ -56,12 +56,12 @@ Funktionen können nicht nur Konstanten sondern auch andere Funktionen aufrufen.
 
 ```visualbasic
 Function sum_mult(x, y)
-    tmp = mult(x, y)
-    sum_mult = sum(tmp, cnst)
-    ' vba-interne Function Runden
-    sum_mult = sum_mult + Rnd() * 50
-    ' excel-interne Funktion Runden (auf ganze 10)
-    sum_mult = Application.WorksheetFunction.Round(sum_mult, -1)
+    tmp = mult(x, cnst)    
+    sum_mult = sum(tmp, y)    
+    ' vba-interne Funktion Runden
+    sum_mult = Round(sum_mult, 1)    
+    ' excel-interne Funktion Runden 
+    sum_mult = Application.WorksheetFunction.Round(sum_mult, 0)
 End Function
 ```
 
@@ -166,7 +166,7 @@ End Function
 
 Bis jetzt wurden den Funktionen nur einzelne Zellen als Eingabeparameter übergeben. Häufig will man aber mit Zellbereichen (vorab unbekannter Größe) arbeiten. Damit das funktioniert, muss der Eingabeparameter von vornherein `As Range` definiert werden. Weiterführendes zum `Range`-Objekt gibt es [hier](https://docs.microsoft.com/de-de/office/vba/api/excel.range(object)). 
 
-Im folgenden Beispiel werden die Eigenschaften `.Columns`, `.Rows` und `.Cells` des `Range` angesprochen und jeweils mittels der Methode `.Count` gezählt. `.Columns`, `.Rows` und `.Cells` sind -- das suggeriert die Mehrzahl bereits -- wieder Gruppen von Spalten, Zeilen oder Zellen.
+Im folgenden Beispiel werden die Eigenschaften `.Columns`, `.Rows` und `.Cells` des `Range` angesprochen und jeweils mittels der Methode `.Count` gezählt. `.Columns`, `.Rows` und `.Cells` sind -- das suggeriert die Mehrzahl bereits -- wieder Gruppen von Spalten, Zeilen oder Zellen. Eigenschaften -- oder besser Unterobjekte -- wie `.Cells` haben selbst wieder Attribute (wie `.Value` oder `.Font`) und unterstützen bestimmte Methoden (wie `.Select`, `.Copy`, `.Insert` oder `.Count`).
 
 ```visualbasic
 Function xrange(rng As Range)
@@ -182,20 +182,20 @@ Ein `Range` kann als eine Gruppe von Zellen (oder Spalten oder Zeilen) verstande
 Der Rückgabewert des nächsten Beispiels entspricht der Eigenschaft `.Value` der Zelle mit dem entsprechenden Index.
 
 ```visualbasic
-Function getval_frompos(rng As Range, pos)
-    getval_frompos = rng(pos).Value    
+Function getvaluefromindex(rng As Range, idx)
+    getvaluefromindex = rng(idx).Value    
 End Function
 ```
 
 Nächstes Beispiel: Die einzelnen Zellen des Bereiches werden in der Schleife über ihre Position / ihren Index ausgelesen. Die Zahl der loop-Durchläufe wird über die Gesamtzahl der Zellen des eingegebenen Zellbereiches festgelegt.
 
 ```visualbasic
-Function pos_mean(rng As Range)    
+Function mean(rng As Range)    
     summe = 0      
     For i = 1 To rng.Cells.Count
         summe = summe + rng(i).Value
     Next i    
-    pos_mean = summe / rng.Cells.Count        
+    mean = summe / rng.Cells.Count        
 End Function
 ```
 
