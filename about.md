@@ -4,6 +4,4 @@ title: About
 permalink: /about/
 ---
 
-### move along
-
-there's nothing to see here
+move along. there's nothing to see here.
