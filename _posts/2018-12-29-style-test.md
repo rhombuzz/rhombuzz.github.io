@@ -3,6 +3,7 @@ layout: post
 title: "Style Test"
 tags: [test]
 comments: false
+published: false
 ---
 
 Dieser Text demonstriert die Style-Elemente  von Jekyll bzw. Markdown. Schau in den Quelltext um die Anweisungen für die eingebetten Elemente zu sehen.  
