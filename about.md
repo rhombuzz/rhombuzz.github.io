@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-### Contact me
+### move along
 
-[rhombus77 (at) web.de](mailto:rhombus77@web.de)
+there's nothing to see here
