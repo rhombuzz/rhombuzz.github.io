@@ -1,0 +1,8 @@
+alle gems updaten:
+gem update `gem outdated | cut -d ' ' -f 1`
+
+im lokalen pfad:
+jekyll serve (not bundle exec jekyll serve)
+
+im browser:
+http://127.0.0.1:4000/
