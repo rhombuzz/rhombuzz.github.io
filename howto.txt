@@ -1,3 +1,5 @@
+LOKAL:
+
 alle gems updaten:
 gem update `gem outdated | cut -d ' ' -f 1`
 
@@ -6,3 +8,22 @@ jekyll serve (not bundle exec jekyll serve)
 
 im browser:
 http://127.0.0.1:4000/
+
+
+GIT:
+
+1) ins Verzeichnis /home/rhombus/Dokumente/github/
+
+2) clone the repository from github to lokal: git clone https://github.com/rhombuzz/rhombuzz.github.io
+
+3) Dateien ändern, Beiträge hinzufügen
+
+4) im Verzeichnis /home/rhombus/Dokumente/github/rhombuzz.github.io:
+
+4a) git add --all
+
+4b) git commit -m "Initial commit"
+
+4c) git push -u origin master
+
+
