@@ -18,4 +18,6 @@ download: <https://rhombuzz.github.io/images/aKdU.webm>
 </video>
 download: <https://rhombuzz.github.io/images/aKdU_rollmean3.webm>
 
+min: 80%, max: 139%, mean: 102%, median: 102%
+
 
