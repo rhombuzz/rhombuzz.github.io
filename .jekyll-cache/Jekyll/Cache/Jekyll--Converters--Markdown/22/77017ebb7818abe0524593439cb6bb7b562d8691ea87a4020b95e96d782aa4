@@ -1,4 +1,4 @@
-I"�p<p>Möge der folgende Einstieg den lieben Kolleginnen und Kollegen von nachhaltigem Nutzen sein …</p>
+I"�u<p>Möge der folgende Einstieg den lieben Kolleginnen und Kollegen von nachhaltigem Nutzen sein …</p>
 
 <h2 id="intro">Intro</h2>
 
@@ -155,14 +155,21 @@ Das ist nicht sonderlich übersichtlich.</p>
 
 <p>Ein <code class="language-plaintext highlighter-rouge">Range</code> kann als eine Gruppe von Zellen (oder Spalten oder Zeilen) verstanden werden. Die einzelnen Elemente können über ihren Index angesprochen werden, der – im Gegensatz zum <code class="language-plaintext highlighter-rouge">Array</code> – in diesem Fall mit 1 beginnt (man merkt, Konsistenz ist nicht so MS’ Sache).</p>
 
-<p>Der Rückgabewert des nächsten Beispiels entspricht der Eigenschaft <code class="language-plaintext highlighter-rouge">.Value</code> der Zelle mit dem entsprechenden Index.</p>
+<p>Der Rückgabewert des nächsten Beispiels entspricht der Eigenschaft <code class="language-plaintext highlighter-rouge">.Value</code> der Zelle mit dem entsprechenden Index. Die entsprechende Zelle wird durch die Eigenschaft <code class="language-plaintext highlighter-rouge">.Cells</code> gefunden. Die einzelnen <code class="language-plaintext highlighter-rouge">.Cells</code> eines Range-Objektes werden mit dem Index zunächst spalten- dann zeilenweise durchgegangen.</p>
 
 <div class="language-visualbasic highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">Function</span> <span class="nf">getvaluefromindex</span><span class="p">(</span><span class="n">rng</span> <span class="ow">As</span> <span class="n">Range</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span>
-    <span class="n">getvaluefromindex</span> <span class="o">=</span> <span class="n">rng</span><span class="p">(</span><span class="n">idx</span><span class="p">).</span><span class="n">Value</span>    
+    <span class="n">getvaluefromindex</span> <span class="o">=</span> <span class="n">rng</span><span class="p">.</span><span class="n">Cells</span><span class="p">(</span><span class="n">idx</span><span class="p">).</span><span class="n">Value</span>  
 <span class="k">End</span> <span class="k">Function</span>
 </code></pre></div></div>
 
-<p>Nächstes Beispiel: Die einzelnen Zellen des Bereiches werden in der Schleife über ihre Position / ihren Index ausgelesen. Die Zahl der loop-Durchläufe wird über die Gesamtzahl der Zellen des eingegebenen Zellbereiches festgelegt.</p>
+<p>kurzer Exkurs: Das Worksheet-Objekt besitzt ebenfalls eine Eigenschaft namens .Cells. Mit dieser kann man eine Zelle über ihre absolute Position (Zeile, Spalte) im Blatt angesprochen werden.</p>
+
+<div class="language-visualbasic highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">Function</span> <span class="nf">getvaluefromposition</span><span class="p">(</span><span class="n">zeile</span><span class="p">,</span> <span class="n">spalte</span><span class="p">)</span>
+    <span class="n">getvaluefromposition</span> <span class="o">=</span> <span class="n">ActiveSheet</span><span class="p">.</span><span class="n">Cells</span><span class="p">(</span><span class="n">zeile</span><span class="p">,</span> <span class="n">spalte</span><span class="p">)</span>
+<span class="k">End</span> <span class="k">Function</span>
+</code></pre></div></div>
+
+<p>Zurück zum <code class="language-plaintext highlighter-rouge">Range</code> – nächstes Beispiel: Die einzelnen Zellen des Bereiches werden in der Schleife über ihre Position / ihren Index ausgelesen. Die Zahl der loop-Durchläufe wird über die Gesamtzahl der Zellen des eingegebenen Zellbereiches festgelegt.</p>
 
 <div class="language-visualbasic highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">Function</span> <span class="nf">mean</span><span class="p">(</span><span class="n">rng</span> <span class="ow">As</span> <span class="n">Range</span><span class="p">)</span>    
     <span class="n">summe</span> <span class="o">=</span> <span class="mi">0</span>      

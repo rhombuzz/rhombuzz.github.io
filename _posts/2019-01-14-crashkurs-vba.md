@@ -179,21 +179,29 @@ End Function
 
 Ein `Range` kann als eine Gruppe von Zellen (oder Spalten oder Zeilen) verstanden werden. Die einzelnen Elemente können über ihren Index angesprochen werden, der -- im Gegensatz zum `Array` -- in diesem Fall mit 1 beginnt (man merkt, Konsistenz ist nicht so MS' Sache). 
 
-Der Rückgabewert des nächsten Beispiels entspricht der Eigenschaft `.Value` der Zelle mit dem entsprechenden Index.
+Der Rückgabewert des nächsten Beispiels entspricht der Eigenschaft `.Value` der Zelle mit dem entsprechenden Index. Die entsprechende Zelle wird durch die Eigenschaft `.Cells` gefunden. Die einzelnen `.Cells` eines Range-Objektes werden mit dem Index zunächst spalten- dann zeilenweise durchgezählt.
 
 ```visualbasic
 Function getvaluefromindex(rng As Range, idx)
-    getvaluefromindex = rng(idx).Value    
+    getvaluefromindex = rng.Cells(idx).Value  
 End Function
 ```
 
-Nächstes Beispiel: Die einzelnen Zellen des Bereiches werden in der Schleife über ihre Position / ihren Index ausgelesen. Die Zahl der loop-Durchläufe wird über die Gesamtzahl der Zellen des eingegebenen Zellbereiches festgelegt.
+kurzer Exkurs: Das Worksheet-Objekt besitzt ebenfalls eine Eigenschaft namens `.Cells`. Mit dieser kann man eine Zelle über ihre absolute Position (Zeile, Spalte) im Blatt angesprochen werden.
+
+```visualbasic
+Function getvaluefromposition(zeile, spalte)
+    getvaluefromposition = ActiveSheet.Cells(zeile, spalte)
+End Function
+```
+
+Zurück zum `Range` mit dem nächsten Beispiel: Die einzelnen Zellen des Bereiches werden in der Schleife über ihre Position / ihren Index ausgelesen. Die Zahl der loop-Durchläufe wird über die Gesamtzahl der Zellen des eingegebenen Zellbereiches festgelegt.
 
 ```visualbasic
 Function mean(rng As Range)    
     summe = 0      
     For i = 1 To rng.Cells.Count
-        summe = summe + rng(i).Value
+        summe = summe + rng.Cells(i).Value
     Next i    
     mean = summe / rng.Cells.Count        
 End Function
