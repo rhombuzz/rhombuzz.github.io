@@ -3,6 +3,7 @@ layout: post
 title: "Zeitreihen als Karten"
 tags: [qgis, KdU]
 comments: false
+published: false
 ---
 
 ## durchschnittliche anerkannte KdU pro BG in Euro

@@ -3,6 +3,7 @@ layout: post
 title: "Crashkurs VBA"
 tags: [vba, excel]
 comments: false
+published: false
 ---
 
 Möge der folgende Einstieg den lieben Kolleginnen und Kollegen von nachhaltigem Nutzen sein ...
