@@ -24,10 +24,10 @@ navigation:
     url: /
   - name: about
     url: /about
-  - name: archive
-    url: /archive
-  - name: tags
-    url: /tags
+#  - name: archive
+#    url: /archive
+#  - name: tags
+#    url: /tags
 
 
 # Pagination
@@ -97,8 +97,8 @@ sass:
 
 # Use the following plug-ins
 plugins:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-sitemap  # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed     # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate
 
 # Exclude these files from your production _site

@@ -1,0 +1,38 @@
+LOKAL:
+
+alle gems updaten:
+gem update `gem outdated | cut -d ' ' -f 1`
+
+im lokalen pfad:
+jekyll serve (not bundle exec jekyll serve)
+
+im browser:
+http://127.0.0.1:4000/
+
+
+GIT:
+
+1) ins Verzeichnis /home/rhombus/Dokumente/github/
+
+2) clone the repository from github to lokal: git clone https://github.com/rhombuzz/rhombuzz.github.io
+
+3) Dateien ändern, Beiträge hinzufügen
+
+4) im Verzeichnis /home/rhombus/Dokumente/github/rhombuzz.github.io:
+
+4a) git status
+
+4b) git add --all
+
+>>> updates the index using the current content found in the working tree.
+>>> prepares content for next commit.
+
+4c) git commit -m "commit message"
+
+>>> new commit containing the current content of the index.
+
+4d) git push -u origin master
+
+>>> git push <remote> <branch>
+>>> new content is getting pushed to origin (remote server) as master (branch name).
+
