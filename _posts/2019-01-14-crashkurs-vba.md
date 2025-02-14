@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Crashkurs VBA"
+description: "Ein zügiger Einstieg in die Abgründe von VBA für Excel."
 tags: [vba, excel]
 comments: false
 published: false

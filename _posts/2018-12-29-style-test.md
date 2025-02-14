@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Style Test"
+description: "Eine komprimierte Einführung in die Verwendung von Markdown für Jekyll. Der unvermeidliche erste Beitrag. Immer. Überall."
 tags: [test]
 comments: false
-published: false
+published: true
 ---
 
-Dieser Text demonstriert die Style-Elemente  von Jekyll bzw. Markdown. Schau in den Quelltext um die Anweisungen für die eingebetten Elemente zu sehen.  
+Dieser Text demonstriert die Style-Elemente von Jekyll bzw. Markdown. Schau in den Quelltext um die Anweisungen für die eingebetten Elemente zu sehen.
 
 ---
 

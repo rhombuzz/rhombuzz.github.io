@@ -1,0 +1,64 @@
+i) INSTALL JEKYLL etc:
+
+1) nur BUNDLER installieren
+    gem install bundler
+
+github-pages braucht eine besondere alte Version von Jekyll etc. 
+dies wird dadurch sichergestellt, dass Jekyll nicht installiert wird,
+sondern nur im GEMFILE (vgl. 4) auf github-pages verwiesen wird.
+
+
+2) vorhandene Seite KLONEN
+    cd Dokumente/github
+    git clone https://github.com/rhombuzz/rhombuzz.github.io
+    cd rhombuzz.github.io
+
+3) GEMFILE erstellen
+    bundle init
+
+4) GEMFILE bearbeiten
+
+im GEMFILE sollen nur die folgenden beiden ZEILEN stehen:
+
+    source "https://rubygems.org"
+    gem "github-pages"
+
+5) BUNDLER laufen lassen
+    bundle
+
+6) [alle GEMS updaten]
+    gem update `gem outdated | cut -d ' ' -f 1`
+
+
+ii) RUN JEKYLL:
+
+im lokalen Pfad:
+    bundle exec jekyll serve
+
+im browser:
+    http://127.0.0.1:4000/
+
+
+iii) GIT:
+
+1) Dateien ändern, Beiträge hinzufügen
+
+2) im Verzeichnis /home/rhombus/Dokumente/github/rhombuzz.github.io:
+
+2a) git status
+
+2b) git add --all
+
+>>> updates the index using the current content found in the working tree.
+>>> prepares content for next commit.
+
+2c) git commit -m "commit message"
+
+>>> new commit containing the current content of the index.
+
+2d) git push -u origin master
+
+>>> git push <remote> <branch>
+>>> new content is getting pushed to origin (remote server) as master (branch name).
+<<< Hier statt dem PASSWORT den neuen PRIVATE ACCESS TOKEN (PAT) eingeben.
+

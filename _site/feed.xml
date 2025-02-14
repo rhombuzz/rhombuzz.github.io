@@ -1,5 +1,206 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-13T09:52:27+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">rhombuzz.github.io</title><subtitle>a dumpster fire of pitiful ideas</subtitle><entry><title type="html">plotly</title><link href="http://localhost:4000/plotly/" rel="alternate" type="text/html" title="plotly" /><published>2024-03-06T00:00:00+01:00</published><updated>2024-03-06T00:00:00+01:00</updated><id>http://localhost:4000/plotly</id><content type="html" xml:base="http://localhost:4000/plotly/"><![CDATA[<h2 id="just-a-test">just a test</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-14T13:05:45+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">rhombuzz.github.io</title><subtitle>a dumpster fire of pitiful ideas</subtitle><entry><title type="html">SGB II-Quote Choropleth</title><link href="http://localhost:4000/plotly/" rel="alternate" type="text/html" title="SGB II-Quote Choropleth" /><published>2024-03-06T00:00:00+01:00</published><updated>2024-03-06T00:00:00+01:00</updated><id>http://localhost:4000/plotly</id><content type="html" xml:base="http://localhost:4000/plotly/"><![CDATA[<p>click here to check the standalone html-file:</p>
 
-<p>click here to check the standalone html-file:</p>
+<p><a href="/pages/sgb2Q_choropleth_bar_go_v10.html">SGB II-Quote</a></p>]]></content><author><name></name></author><category term="plotly" /><summary type="html"><![CDATA[Hier wird testweise eine eigenständige html-Seite verlinkt, die ein Plotly-Diagramm enthält.]]></summary></entry><entry><title type="html">Style Test</title><link href="http://localhost:4000/style-test/" rel="alternate" type="text/html" title="Style Test" /><published>2018-12-29T00:00:00+01:00</published><updated>2018-12-29T00:00:00+01:00</updated><id>http://localhost:4000/style-test</id><content type="html" xml:base="http://localhost:4000/style-test/"><![CDATA[<p>Dieser Text demonstriert die Style-Elemente von Jekyll bzw. Markdown. Schau in den Quelltext um die Anweisungen für die eingebetten Elemente zu sehen.</p>
 
-<p><a href="/pages/sgb2Q_choropleth_bar_go_v10.html">SGB II-Quote</a></p>]]></content><author><name></name></author><category term="plotly" /><summary type="html"><![CDATA[just a test]]></summary></entry></feed>
+<hr />
+
+<h2 id="1-header">1. Header</h2>
+
+<h1 id="header-h1-reserved-for-post-titles">Header H1 (reserved for post titles)</h1>
+
+<h2 id="header-h2">Header H2</h2>
+
+<h3 id="header-h3">Header H3</h3>
+
+<h4 id="header-h4">Header H4</h4>
+
+<h5 id="header-h5">Header H5</h5>
+
+<h6 id="header-h6">Header H6</h6>
+
+<h5 class="center" id="h4-center">H4 Center</h5>
+
+<h5 class="right" id="h4-right">H4 Right</h5>
+
+<h2 id="2-text">2. Text</h2>
+
+<p>Links können im <a href="https://rhombuzz.github.io">Text</a> stehen oder vollständig gezeigt werden <a href="https://rhombuzz.github.io">https://rhombuzz.github.io</a>.</p>
+
+<p>Inline markup funktioniert wie folgt:</p>
+
+<p><strong>Das ist fett.</strong></p>
+
+<p><em>Das ist kursiv.</em></p>
+
+<p><em>Das ist auch kursiv.</em></p>
+
+<p><code class="language-plaintext highlighter-rouge">Das ist Code.</code></p>
+
+<p><u>Das ist unterstrichen</u>.</p>
+
+<p><del>Das ist durchgestrichen</del>.</p>
+
+<p><mark>Igitt, das ist gelb markiert.</mark></p>
+
+<p>Formeln: 5<sup>3</sup> = 125. Wasser ist H<sub>2</sub>O.</p>
+
+<p>Es gibt sogar Fussnoten. <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>Benutze zwei Leerzeichen <br />
+rechts am Ende der Zeile<br />
+um Zeilenumbrüche zu erzeugen.</p>
+
+<h2 id="3-images">3. Images</h2>
+
+<p><img src="/images/logo.jpg" alt="example image" title="Small-sized example image" /></p>
+
+<p><img src="/images/logo.jpg" alt="Center example image" title="Center" class="center-image" /></p>
+
+<h2 id="4-blockquotes">4. Blockquotes</h2>
+
+<blockquote>
+  <p>Blockquote. Wer liebt nicht Zitate?</p>
+  <blockquote>
+    <p>nested Blockquote.</p>
+  </blockquote>
+</blockquote>
+
+<h2 id="5-listen-und-aufzählungen">5. Listen und Aufzählungen</h2>
+
+<h3 id="ungeordnete-liste">ungeordnete Liste</h3>
+
+<ul>
+  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+  <li>Nam ultrices nunc in nisi pellentesque ultricies. Cras scelerisque ipsum in ante laoreet viverra. Pellentesque eget quam et augue molestie tincidunt ac ut ex. Sed quis velit vulputate, rutrum nisl sit amet, molestie neque. Vivamus sed augue at turpis suscipit fringilla.</li>
+  <li>Integer pretium nisl vitae justo aliquam, at varius nisi blandit.
+    <ol>
+      <li>Nunc vehicula nulla ac odio gravida vestibulum sed nec mauris.</li>
+      <li>Duis at diam eget arcu dapibus consequat.</li>
+    </ol>
+  </li>
+  <li>Etiam vel elit in purus iaculis pretium.</li>
+</ul>
+
+<h3 id="nummerierte-liste">nummerierte Liste</h3>
+
+<ol>
+  <li>Quisque ullamcorper leo non ex pretium, in fermentum libero imperdiet.</li>
+  <li>Donec eu nulla euismod, rhoncus ipsum nec, faucibus elit.</li>
+  <li>Nam blandit purus gravida, accumsan sem in, lacinia orci.
+    <ul>
+      <li>Duis congue dui nec nisi posuere, at luctus velit semper.</li>
+      <li>Suspendisse in lorem id lacus elementum pretium nec vel nibh.</li>
+    </ul>
+  </li>
+  <li>Aliquam eget ipsum laoreet, maximus risus vitae, iaculis leo.</li>
+</ol>
+
+<h3 id="definition-liste">Definition (Liste)</h3>
+
+<dl>
+  <dt>kramdown</dt>
+  <dd>A Markdown-superset converter</dd>
+  <dt>Maruku</dt>
+  <dd>Another Markdown-superset converter</dd>
+</dl>
+
+<h2 id="6-tabellen">6. Tabellen</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell7</td>
+      <td style="text-align: center">cell8</td>
+      <td style="text-align: right">cell9</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Foot1</td>
+      <td style="text-align: center">Foot2</td>
+      <td style="text-align: right">Foot3</td>
+    </tr>
+  </tfoot>
+</table>
+
+<h2 id="7-code-snippets">7. Code Snippets</h2>
+
+<h3 id="syntax-highlighting">Syntax Highlighting</h3>
+
+<p>Python Code wird dem Schlüsselwort ```python eingeleitet.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="syntax_gruvbox"><code><span class="c1"># python
+</span>
+<span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Hello'</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">test</span><span class="p">(</span><span class="n">john</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>VB Code wird dem Schlüsselwort ```visualbasic eingeleitet.</p>
+
+<div class="language-visualbasic highlighter-rouge"><div class="highlight"><pre class="syntax_gruvbox"><code><span class="c1">' visual basic</span>
+
+<span class="k">Function</span> <span class="nf">test</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="n">test</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">1000</span>
+<span class="k">End</span> <span class="k">Function</span>
+</code></pre></div></div>
+
+<p>Der Code-Block wird jeweils mit ``` abgeschlossen.
+Das Styling und die Farben werden in <code class="language-plaintext highlighter-rouge">/_sass/_highlighter.scss</code> modifiziert.</p>
+
+<p>Ein Standard-Code-Block ohne highlighting</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="syntax_gruvbox"><code>&lt;div id="awesome"&gt;
+  &lt;p&gt;This is great isn't it?&lt;/p&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+
+<h3 id="github-gist-embed">GitHub Gist Embed</h3>
+
+<p>An example of a Gist embed below.</p>
+
+<script src="https://gist.github.com/mmistakes/43a355923921d22cd993.js"></script>
+
+<p>Below is a partial code showing main steps of merge function.</p>
+
+<p><code data-gist-id="0fe211678316cc53370c" data-gist-file="merge_tables_datatable.R" data-gist-line="50-52,57,65-69,80,88-90,100-106"></code></p>
+
+<h2 id="und-schlussendlich-horizontale-linien">Und Schlussendlich: Horizontale Linien</h2>
+<hr />
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="http://en.wikipedia.org/wiki/Syntax_highlighting">http://en.wikipedia.org/wiki/Syntax_highlighting</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="test" /><summary type="html"><![CDATA[Eine komprimierte Einführung in die Verwendung von Markdown für Jekyll. Der unvermeidliche erste Beitrag. Immer.]]></summary></entry></feed>

@@ -31,7 +31,7 @@ navigation:
 
 
 # Pagination
-paginate: 5
+paginate: 12
 
 # Includes an icon in the footer for each username you enter
 footer-links:
