@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-14T13:05:45+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">rhombuzz.github.io</title><subtitle>a dumpster fire of pitiful ideas</subtitle><entry><title type="html">SGB II-Quote Choropleth</title><link href="http://localhost:4000/plotly/" rel="alternate" type="text/html" title="SGB II-Quote Choropleth" /><published>2024-03-06T00:00:00+01:00</published><updated>2024-03-06T00:00:00+01:00</updated><id>http://localhost:4000/plotly</id><content type="html" xml:base="http://localhost:4000/plotly/"><![CDATA[<p>click here to check the standalone html-file:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-14T15:16:54+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">rhombuzz.github.io</title><subtitle>a dumpster fire of pitiful ideas</subtitle><entry><title type="html">SGB II-Quote Choropleth</title><link href="http://localhost:4000/plotly/" rel="alternate" type="text/html" title="SGB II-Quote Choropleth" /><published>2024-03-06T00:00:00+01:00</published><updated>2024-03-06T00:00:00+01:00</updated><id>http://localhost:4000/plotly</id><content type="html" xml:base="http://localhost:4000/plotly/"><![CDATA[<p>click here to check the standalone html-file:</p>
 
 <p><a href="/pages/sgb2Q_choropleth_bar_go_v10.html">SGB II-Quote</a></p>]]></content><author><name></name></author><category term="plotly" /><summary type="html"><![CDATA[Hier wird testweise eine eigenständige html-Seite verlinkt, die ein Plotly-Diagramm enthält.]]></summary></entry><entry><title type="html">Style Test</title><link href="http://localhost:4000/style-test/" rel="alternate" type="text/html" title="Style Test" /><published>2018-12-29T00:00:00+01:00</published><updated>2018-12-29T00:00:00+01:00</updated><id>http://localhost:4000/style-test</id><content type="html" xml:base="http://localhost:4000/style-test/"><![CDATA[<p>Dieser Text demonstriert die Style-Elemente von Jekyll bzw. Markdown. Schau in den Quelltext um die Anweisungen für die eingebetten Elemente zu sehen.</p>
 
@@ -158,7 +158,7 @@ um Zeilenumbrüche zu erzeugen.</p>
 
 <p>Python Code wird dem Schlüsselwort ```python eingeleitet.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="syntax_gruvbox"><code><span class="c1"># python
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># python
 </span>
 <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">print</span><span class="p">(</span><span class="s">'Hello'</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
@@ -168,7 +168,7 @@ um Zeilenumbrüche zu erzeugen.</p>
 
 <p>VB Code wird dem Schlüsselwort ```visualbasic eingeleitet.</p>
 
-<div class="language-visualbasic highlighter-rouge"><div class="highlight"><pre class="syntax_gruvbox"><code><span class="c1">' visual basic</span>
+<div class="language-visualbasic highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">' visual basic</span>
 
 <span class="k">Function</span> <span class="nf">test</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
     <span class="n">test</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">1000</span>
@@ -180,7 +180,7 @@ Das Styling und die Farben werden in <code class="language-plaintext highlighter
 
 <p>Ein Standard-Code-Block ohne highlighting</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="syntax_gruvbox"><code>&lt;div id="awesome"&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div id="awesome"&gt;
   &lt;p&gt;This is great isn't it?&lt;/p&gt;
 &lt;/div&gt;
 </code></pre></div></div>
@@ -203,4 +203,4 @@ Das Styling und die Farben werden in <code class="language-plaintext highlighter
       <p><a href="http://en.wikipedia.org/wiki/Syntax_highlighting">http://en.wikipedia.org/wiki/Syntax_highlighting</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><category term="test" /><summary type="html"><![CDATA[Eine komprimierte Einführung in die Verwendung von Markdown für Jekyll. Der unvermeidliche erste Beitrag. Immer.]]></summary></entry></feed>
+</div>]]></content><author><name></name></author><category term="test" /><summary type="html"><![CDATA[Eine komprimierte Einführung in die Verwendung von Markdown für Jekyll. Der unvermeidliche erste Beitrag. Immer. Überall.]]></summary></entry></feed>
