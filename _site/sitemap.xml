@@ -5,8 +5,8 @@
 <lastmod>2018-12-29T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/plotly/</loc>
-<lastmod>2024-03-06T00:00:00+01:00</lastmod>
+<loc>http://localhost:4000/show-some-plotly-plots/</loc>
+<lastmod>2025-02-17T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/404/</loc>
@@ -24,7 +24,11 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/pages/sgb2Q_choropleth_bar_go_v10.html</loc>
-<lastmod>2025-02-13T09:04:27+01:00</lastmod>
+<loc>http://localhost:4000/pages/KdU_choropleth_bar_v1.html</loc>
+<lastmod>2025-02-16T17:26:06+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/pages/sgb2Q_choropleth_bar_v12.html</loc>
+<lastmod>2025-02-16T21:30:00+01:00</lastmod>
 </url>
 </urlset>
